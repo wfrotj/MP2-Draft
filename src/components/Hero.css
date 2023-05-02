@@ -1,0 +1,24 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1em;
+  padding: 1em;
+}
+.form-container {
+  display: flex;
+  gap: 1em;
+
+  align-items: center;
+}
+.form-container,
+h3 {
+  font-weight: 600;
+}
+.input-search {
+  font-size: 20px;
+  margin-right: 0.5em;
+}
+.button-search {
+  font-size: 20px;
+}

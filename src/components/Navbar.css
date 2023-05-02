@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1em;
+  background-color: bisque;
+}
+.menu-items,
+h1 {
+  margin: 0 1em;
+}
+.menu-items {
+  display: flex;
+  gap: 2em;
+}
