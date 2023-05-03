@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import News from "./News";
+import "./GalleryNews.css";
 
-function Gallery() {
-  async function getNewsData() {
+function GalleryNews() {
+  const [items, setItems] = useState(null);
+  async function getNews() {
     const response = await fetch(
-      "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=2c6078fb9ad94191a15153fc20b84bd7"
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2c6078fb9ad94191a15153fc20b84bd7"
     );
     const data = await response.json();
-    console.log(data);
+    setItems(data.articles);
   }
+  useEffect(() => {
+    getNews();
+  }, []);
 
-  return <div>Gallery</div>;
+  if (items === null) return <p>Please wait.</p>;
+
+  return (
+    <div className="news-gallery">
+      {items.map((article, index) => (
+        <News key={index} article={article} />
+      ))}
+    </div>
+  );
 }
 
-export default Gallery;
+export default GalleryNews;
