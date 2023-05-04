@@ -2,8 +2,8 @@
   display: flex;
 }
 .image-container img {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
 }
 .details {
   display: flex;
@@ -11,6 +11,8 @@
   align-items: start;
   gap: 1em;
   padding: 1em;
+  font-size: 10px;
+  justify-content: space-between;
 }
 .title .link {
   text-decoration: none;
@@ -18,4 +20,8 @@
 }
 .link:hover {
   text-decoration: underline;
+}
+.source {
+  font-size: 15px;
+  position: relative;
 }

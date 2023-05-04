@@ -1,0 +1,15 @@
+.weather-data {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  gap: 1em;
+  margin-right: 2em;
+}
+.weather-description {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.description {
+  font-size: 20px;
+}

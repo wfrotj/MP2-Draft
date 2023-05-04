@@ -1,19 +1,14 @@
 import React from "react";
 import "./News.css";
 function News({ article }) {
-  const {
-    urlToImage,
-    title,
-    publishedAt,
-    author,
-    url,
-    source,
-    alt = "https://picsum.photos/id/237/200/300",
-  } = article;
+  const { urlToImage, title, author, url, source, category } = article;
+
   return (
     <main className="news-container">
       <div className="image-container">
-        <img src={urlToImage} alt={alt} />
+        <img
+          src={urlToImage ? urlToImage : "https://picsum.photos/id/237/200/300"}
+        />
       </div>
       <div className="details">
         <h2 className="title">
@@ -21,10 +16,13 @@ function News({ article }) {
             {title}
           </a>
         </h2>
-        <p className="date">{publishedAt}</p>
+
         <h3 className="author">{author}</h3>
-        <p>{source.name}</p>
-        <section className="source"></section>
+
+        <h2>{category}</h2>
+        <section className="source">
+          <p>{source.name}</p>
+        </section>
       </div>
     </main>
   );

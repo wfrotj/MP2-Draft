@@ -1,18 +1,21 @@
 import React from "react";
 import "./Hero.css";
+import Weather from "./Weather";
 
 function Hero() {
   return (
     <section className="hero-container">
-      <div className="form-container">
-        <h3>Search for the latest news today!</h3>
-        <form>
-          <input type="text" className="input-search" />
-          <button className="button-search">Search</button>
-        </form>
+      <div className="menu-container">
+        <a href="">News</a>
+        <a href="">Business</a>
+
+        <a href="">Entertainment</a>
+        <a href="">Lifestyle</a>
+        <a href="">Education</a>
+        <a href="">Lifestyle</a>
       </div>
       <div className="weather-container">
-        <h1>Weather</h1>
+        <Weather />
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 import React from "react";
+import Weather from "./components/Weather";
+import GalleryNews from "./components/GalleryNews";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import GalleryNews from "./components/GalleryNews";
-
 function App() {
   return (
     <div>
