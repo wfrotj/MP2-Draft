@@ -2,8 +2,8 @@
   display: flex;
 }
 .image-container img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 250px;
 }
 .details {
   display: flex;
@@ -12,7 +12,7 @@
   gap: 1em;
   padding: 1em;
   font-size: 10px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .title .link {
   text-decoration: none;
@@ -24,4 +24,10 @@
 .source {
   font-size: 15px;
   position: relative;
+}
+.title {
+  font-size: 25px;
+}
+.author {
+  font-size: 15px;
 }

@@ -10,7 +10,6 @@ function Weather() {
     const weatherData = await response.json();
 
     setData(weatherData);
-    console.log(weatherData);
   }
   useEffect(() => {
     getWeatherData();

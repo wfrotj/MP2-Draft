@@ -4,3 +4,14 @@
   gap: 1em;
   margin: 1em 1em;
 }
+.loading {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em auto;
+}
+.hourglass {
+  font-size: 100px;
+}
